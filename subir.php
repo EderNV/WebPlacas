@@ -13,4 +13,14 @@ fclose($fp);
 copy($ruta, $destino);
 mysql_query("INSERT INTO imagenes (imagen, tipo_imagen) VALUES ('$data', '$destino')") ;
 header("location: dashboard.php");
+
+/*
+echo "asd";
+
+$command = escapeshellcmd('/home/laurens/repoLaurens/ProyectoInteligenciaArtificial/EntregI/Main.py');
+$output = shell_exec($command);
+echo $output;
+
+*/
+
 ?>
